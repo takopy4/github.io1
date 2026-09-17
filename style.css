@@ -1,0 +1,214 @@
+/* === БАЗОВЫЕ СТИЛИ И СБРОС === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f6;
+    padding: 40px 20px;
+}
+
+/* === ОСНОВНОЙ КОНТЕЙНЕР === */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* === ЗАГОЛОВКИ === */
+h1 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eaeaea;
+}
+
+h2 {
+    font-size: 22px;
+    color: #34495e;
+    margin: 30px 0 15px 0;
+}
+
+/* === ССЫЛКИ === */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+a:hover {
+    color: #2980b9;
+    border-bottom: 1px solid #2980b9;
+}
+
+/* === СПИСКИ === */
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+/* === КАРТА ИЗОБРАЖЕНИЯ === */
+.map-container {
+    position: relative;
+    display: inline-block;
+    margin: 15px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.map-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+area {
+    outline: 1px solid rgba(255, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+/* === ФОРМА === */
+.form-section {
+    background-color: #fafbfc;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #e1e4e8;
+    margin-top: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #444;
+    font-size: 15px;
+}
+
+/* Стили для всех полей ввода */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+/* Эффект фокуса на полях */
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+select[multiple] {
+    padding: 8px;
+    height: auto;
+}
+
+/* Радиокнопки и чекбоксы */
+.radio-group, .checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.radio-group label, .checkbox-group label {
+    font-weight: normal;
+    margin-bottom: 0;
+    display: inline;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"],
+.checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+
+/* === КНОПКА === */
+button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* === РАЗДЕЛИТЕЛЬ === */
+hr {
+    border: 0;
+    height: 1px;
+    background: #eaeaea;
+    margin: 40px 0;
+}
+
+/* === ССЫЛКА НАВЕРХ === */
+.back-to-top {
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* === ВСПОМОГАТЕЛЬНЫЕ КЛАССЫ === */
+.logo-img {
+    border-radius: 5px;
+}
+
+.map-hint {
+    font-size: 14px;
+    color: #666;
+}
+
+.full-width-label {
+    width: 100%;
+}
